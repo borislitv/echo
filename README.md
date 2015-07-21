@@ -1,6 +1,6 @@
 build docker images with
 
-```docker build -t registry.ape.yandex.net/echo```
+```docker build -t registry.ape.yandex.net/echo .```
 
 push to registry
 
