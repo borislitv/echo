@@ -1,0 +1,30 @@
+{
+  "name": "echo", 
+  "version": "1", 
+  "members": {
+    "borislitv": [
+      "admin", 
+      "developer"
+    ]
+  }, 
+  "clusters": {
+    "production": {
+      "profile": "docker-one", 
+      "manifest": {
+        "environment": {
+          "YANDEX_ENVIRONMENT": "production"
+        }, 
+        "slave": "/root/echo.py"
+      }
+    }, 
+    "testing": {
+      "profile": "docker-one", 
+      "manifest": {
+        "environment": {
+          "YANDEX_ENVIRONMENT": "testing"
+        }, 
+        "slave": "/root/echo.py"
+      }
+    }
+  }
+}
